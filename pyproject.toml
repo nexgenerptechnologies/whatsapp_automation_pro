@@ -4,6 +4,7 @@ authors = [
     { name = "NexGen Enterprises", email = "nexgenerptechnologies@gmail.com" }
 ]
 description = "Advanced WhatsApp Marketing and Automation Connector"
+version = "1.0.0"
 requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [

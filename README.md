@@ -2,6 +2,8 @@
 
 **The Ultimate WhatsApp Marketing & Automation Suite for Frappe / ERPNext**
 
+**Version:** 1.0.0
+
 Save money and time! **No official WhatsApp API registration required.** Just scan your QR code and start sending automated invoices and messages instantly.
 
 ---
@@ -32,6 +34,15 @@ Build your own intelligent auto-responder inside ERPNext:
 - **No Coding Required**: Everything is managed through a simple settings page.
 - **Jinja Templates**: Use tags like `{customer_name}` or `{grand_total}` to personalize every message.
 - **White-Labeled**: Fully branded for your business (Powered by NexGen Enterprises).
+
+---
+
+## 💳 Requirements & Pricing
+
+This app acts as a bridge to the **NexGen WhatsApp Gateway**. 
+- **Platform Subscription**: To send messages, an active subscription on [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com) is required.
+- **Trial**: New users can sign up for a trial account on the platform to test the integration.
+- **Official API**: No official Meta API or per-message fees are required.
 
 ---
 
