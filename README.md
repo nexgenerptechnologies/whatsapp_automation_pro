@@ -4,45 +4,50 @@
 
 **Version:** 1.0.0
 
-Save money and time! **No official WhatsApp API registration required.** Just scan your QR code and start sending automated invoices and messages instantly.
+Choose your way! Whether you prefer the simplicity of **QR Code Scanning** or the power of the **Official WhatsApp Business API**, our app bridges the gap seamlessly.
 
 ---
 
-## 🌟 Why WhatsApp Automation Pro?
+## 🔗 Hybrid Connectivity Options
 
-Unlike official WhatsApp Business APIs that require complex verification and charge per message, **WhatsApp Automation Pro** allows you to use your existing WhatsApp account to automate your entire ERPNext workflow with **zero message costs**.
+We give you the freedom to choose the connection method that fits your business model:
+
+### 📱 Option A: Direct QR Scanning (Scan & Go)
+*   **Best For**: Small to Medium businesses looking for speed and cost savings.
+*   **Key Advantage**: **Zero Per-Message Fees.** You only pay your platform subscription.
+*   **Setup**: Just scan the QR code from your phone—no Meta verification needed.
+
+### 🏢 Option B: Official WhatsApp Business API
+*   **Best For**: Enterprises requiring high stability and "Verified Green Badge" status.
+*   **Key Advantage**: Official Meta support for high-volume communication.
+*   **Setup**: Connect your Meta Cloud API credentials directly through our gateway.
+
+---
+
+## 💳 Requirements & Pricing
+
+This app is a professional connector for the **NexGen WhatsApp Gateway**. 
+
+> [!IMPORTANT]
+> **Platform Subscription**: In both cases (QR or Official API), an active subscription on [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com) is required to enable the bridge.
+
+- 💰 **Save on Costs**: Choose the QR Scan method to eliminate all Meta per-message conversation charges.
+- 🧪 **Trial Available**: New users can sign up for a trial account on our platform to test the integration.
 
 ---
 
 ## ✨ Premium Features
 
 ### 1. 🎯 Universal Automation (Any DocType)
-Don't be limited to just Invoices! Our **Dynamic Trigger System** allows you to automate WhatsApp for **any document** in ERPNext:
-- ✅ Sales Orders & Quotations
-- ✅ Purchase Orders
+Automate WhatsApp for **any document** in ERPNext:
+- ✅ Sales Orders, Invoices & Quotations
 - ✅ Payment Entries & Receipts
-- ✅ Delivery Notes
-- ✅ Custom DocTypes
+- ✅ Delivery Notes & Custom DocTypes
 
 ### 2. 🤖 Custom Chatbot Builder
-Build your own intelligent auto-responder inside ERPNext:
-- **Keyword Matching**: Set up rules based on "Exact Match" or "Contains".
-- **Instant Replies**: Automatically answer customer queries (e.g., "Price", "Location", "Status").
-- **24/7 Automation**: Your business stays active even when you are away.
-
-### 3. ⚡ Easy Configuration
-- **No Coding Required**: Everything is managed through a simple settings page.
-- **Jinja Templates**: Use tags like `{customer_name}` or `{grand_total}` to personalize every message.
-- **White-Labeled**: Fully branded for your business (Powered by NexGen Enterprises).
-
----
-
-## 💳 Requirements & Pricing
-
-This app acts as a bridge to the **NexGen WhatsApp Gateway**. 
-- **Platform Subscription**: To send messages, an active subscription on [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com) is required.
-- **Trial**: New users can sign up for a trial account on the platform to test the integration.
-- **Official API**: No official Meta API or per-message fees are required.
+Build your own intelligent auto-responder:
+- **Keyword Matching**: Setup "Exact Match" or "Contains" rules.
+- **Dynamic Replies**: Answer customer queries (Price, Location, Status) 24/7.
 
 ---
 
@@ -50,7 +55,7 @@ This app acts as a bridge to the **NexGen WhatsApp Gateway**.
 
 1. **Get your API Account**:
    - Create an account at [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com).
-   - Scan your WhatsApp QR code to link your number.
+   - Link your WhatsApp via QR Code or Official API.
 
 2. **Install the App**:
    ```bash
@@ -59,20 +64,12 @@ This app acts as a bridge to the **NexGen WhatsApp Gateway**.
    ```
 
 3. **Configure & Launch**:
-   - Go to **WhatsApp Automation Settings** in ERPNext.
-   - Enter your credentials and start adding triggers!
-
----
-
-## 🛡️ License & Privacy
-- **License**: MIT License (Free to use and modify).
-- **Privacy**: Your API keys and message data are encrypted and stay on your server.
+   - Enter your **Vendor UID** and **API Token** in ERPNext and start automating!
 
 ---
 
 ## 🤝 Support & Customization
 
-Need a custom feature? Contact the **NexGen Enterprises** team:
 📧 [nexgenerptechnologies@gmail.com](mailto:nexgenerptechnologies@gmail.com)
 🌐 [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com)
 
