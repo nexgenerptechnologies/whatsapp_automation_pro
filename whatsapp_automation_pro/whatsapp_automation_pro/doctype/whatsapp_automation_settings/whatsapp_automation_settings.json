@@ -79,6 +79,23 @@
    "fieldtype": "Table",
    "label": "WhatsApp Triggers",
    "options": "WhatsApp Trigger"
+  },
+  {
+   "fieldname": "chatbot_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Chatbot Builder"
+  },
+  {
+   "fieldname": "chatbot_enabled",
+   "fieldtype": "Check",
+   "label": "Enable Chatbot"
+  },
+  {
+   "depends_on": "eval:doc.chatbot_enabled",
+   "fieldname": "chatbot_rules",
+   "fieldtype": "Table",
+   "label": "Chatbot Rules",
+   "options": "WhatsApp Chatbot Rule"
   }
  ],
  "index_web_pages_for_search": 1,

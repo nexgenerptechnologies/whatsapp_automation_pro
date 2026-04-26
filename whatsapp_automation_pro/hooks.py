@@ -18,7 +18,7 @@ doc_events = {
 
 # API Endpoints
 # --------------
-# This allows WhatsJet to send data back to your ERPNext
+# This allows your platform to send data back to your ERPNext
 whitelist_methods = [
     "whatsapp_automation_pro.webhooks.handler"
 ]

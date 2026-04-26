@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2026-04-26 14:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "keyword",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Keyword",
+   "reqd": 1,
+   "description": "The word that triggers the bot (e.g., 'Hello')"
+  },
+  {
+   "fieldname": "match_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Match Type",
+   "options": "Exact Match\nContains",
+   "default": "Exact Match"
+  },
+  {
+   "fieldname": "reply_message",
+   "fieldtype": "Small Text",
+   "label": "Reply Message",
+   "reqd": 1,
+   "description": "The message the bot will send back."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "modified": "2026-04-26 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "WhatsApp Automation Pro",
+ "name": "WhatsApp Chatbot Rule",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
