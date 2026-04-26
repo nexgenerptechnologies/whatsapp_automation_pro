@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "WhatsApp Automation Settings",
+ "creation": "2026-04-26 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "connection_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Settings"
+  },
+  {
+   "default": "https://wasender.digitalsoftech.com",
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "label": "WhatsJet Base URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_uid",
+   "fieldtype": "Data",
+   "label": "Vendor UID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_token",
+   "fieldtype": "Password",
+   "label": "API Token",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_instance",
+   "fieldtype": "Data",
+   "label": "Default Instance ID"
+  },
+  {
+   "fieldname": "automation_section",
+   "fieldtype": "Section Break",
+   "label": "Automation Settings"
+  },
+  {
+   "fieldname": "send_on_invoice_submit",
+   "fieldtype": "Check",
+   "label": "Send on Sales Invoice Submit"
+  },
+  {
+   "depends_on": "eval:doc.send_on_invoice_submit",
+   "fieldname": "invoice_message_template",
+   "fieldtype": "Small Text",
+   "label": "Invoice Message Template",
+   "description": "Use {customer_name}, {name}, {grand_total} etc."
+  },
+  {
+   "fieldname": "send_welcome_on_lead",
+   "fieldtype": "Check",
+   "label": "Send Welcome Message on Lead Creation"
+  },
+  {
+   "depends_on": "eval:doc.send_welcome_on_lead",
+   "fieldname": "lead_welcome_template",
+   "fieldtype": "Small Text",
+   "label": "Lead Welcome Message Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-04-26 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "WhatsApp Automation Pro",
+ "name": "WhatsApp Automation Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

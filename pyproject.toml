@@ -1,0 +1,20 @@
+[project]
+name = "whatsapp_automation_pro"
+authors = [
+    { name = "NexGen ERP Technologies", email = "support@nexgenerp.com" }
+]
+description = "Advanced WhatsApp Marketing and Automation Connector for WhatsJet SaaS"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "requests"
+]
+
+[tool.bench]
+app_title = "WhatsApp Automation Pro"
+app_publisher = "NexGen ERP Technologies"
+app_description = "Advanced WhatsApp Marketing and Automation Connector for WhatsJet SaaS"
+app_icon = "octicon octicon-device-mobile"
+app_color = "green"
+app_email = "support@nexgenerp.com"
+app_license = "MIT"
