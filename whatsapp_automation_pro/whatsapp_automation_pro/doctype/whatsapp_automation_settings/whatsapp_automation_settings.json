@@ -21,7 +21,7 @@
    "default": "https://wasender.digitalsoftech.com",
    "fieldname": "base_url",
    "fieldtype": "Data",
-   "label": "WhatsJet Base URL",
+   "label": "Platform Base URL",
    "reqd": 1
   },
   {

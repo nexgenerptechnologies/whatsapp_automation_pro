@@ -1,8 +1,8 @@
 app_name = "whatsapp_automation_pro"
 app_title = "WhatsApp Automation Pro"
-app_publisher = "NexGen ERP Technologies"
-app_description = "Advanced WhatsApp Marketing and Automation Connector for WhatsJet SaaS"
-app_email = "support@nexgenerp.com"
+app_publisher = "NexGen Enterprises"
+app_description = "Advanced WhatsApp Marketing and Automation Connector"
+app_email = "nexgenerptechnologies@gmail.com"
 app_license = "MIT"
 
 # Document Events
