@@ -68,6 +68,17 @@
    "fieldname": "lead_welcome_template",
    "fieldtype": "Small Text",
    "label": "Lead Welcome Message Template"
+  },
+  {
+   "fieldname": "custom_triggers_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Automation Triggers"
+  },
+  {
+   "fieldname": "triggers",
+   "fieldtype": "Table",
+   "label": "WhatsApp Triggers",
+   "options": "WhatsApp Trigger"
   }
  ],
  "index_web_pages_for_search": 1,

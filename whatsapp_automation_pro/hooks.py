@@ -8,8 +8,8 @@ app_license = "MIT"
 # Document Events
 # ----------------
 doc_events = {
-    "Sales Invoice": {
-        "on_submit": "whatsapp_automation_pro.api.send_invoice_notification"
+    "*": {
+        "on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"
     },
     "Lead": {
         "after_insert": "whatsapp_automation_pro.api.send_welcome_message"

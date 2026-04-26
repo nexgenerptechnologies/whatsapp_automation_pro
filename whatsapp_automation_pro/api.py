@@ -43,23 +43,39 @@ def send_whatsapp_text(phone, message, instance_id=None):
         frappe.log_error(f"WhatsApp Send Error: {str(e)}", "WhatsApp Automation Pro")
         return {"status": "error", "message": str(e)}
 
-def send_invoice_notification(doc, method=None):
+def process_dynamic_trigger(doc, method=None):
     """
-    Hook function called on Sales Invoice submission.
+    Global hook handler for all DocTypes on submit.
+    Checks if a trigger is configured in settings.
     """
     settings = get_settings()
-    if not settings.enabled or not settings.send_on_invoice_submit:
+    if not settings.enabled:
         return
 
-    customer_phone = doc.contact_mobile or doc.mobile_no
-    if not customer_phone:
-        return
+    # Check for triggers matching this DocType
+    for trigger in settings.triggers:
+        if trigger.document_type == doc.doctype:
+            # Check condition if provided
+            if trigger.condition:
+                try:
+                    if not frappe.safe_eval(trigger.condition, None, {"doc": doc}):
+                        continue
+                except Exception:
+                    frappe.log_error("WhatsApp Condition Error", "WhatsApp Automation Pro")
+                    continue
+            
+            # Get phone number
+            phone = doc.get(trigger.phone_field)
+            if not phone:
+                continue
+            
+            # Render and send
+            message = frappe.render_template(trigger.message_template, doc)
+            send_whatsapp_text(phone, message)
 
-    # Dynamic message using Jinja
-    message_template = settings.invoice_message_template or "Hi {customer_name}, your invoice {name} for {total} is ready."
-    message = frappe.render_template(message_template, doc)
-
-    send_whatsapp_text(customer_phone, message)
+def send_invoice_notification(doc, method=None):
+    # This is now handled by process_dynamic_trigger if configured in the table
+    pass
 
 def send_welcome_message(doc, method=None):
     """

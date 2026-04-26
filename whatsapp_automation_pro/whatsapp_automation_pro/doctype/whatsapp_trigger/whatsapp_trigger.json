@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2026-04-26 13:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Code",
+   "label": "Condition",
+   "description": "Optional: e.g. doc.grand_total > 1000"
+  },
+  {
+   "fieldname": "phone_field",
+   "fieldtype": "Data",
+   "label": "Phone Field",
+   "default": "mobile_no",
+   "description": "The fieldname in the document that contains the phone number."
+  },
+  {
+   "fieldname": "message_template",
+   "fieldtype": "Small Text",
+   "label": "Message Template",
+   "reqd": 1,
+   "description": "Use {fieldname} for dynamic data."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "modified": "2026-04-26 13:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "WhatsApp Automation Pro",
+ "name": "WhatsApp Trigger",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
