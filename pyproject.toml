@@ -19,3 +19,6 @@ app_icon = "octicon octicon-device-mobile"
 app_color = "green"
 app_email = "nexgenerptechnologies@gmail.com"
 app_license = "MIT"
+
+# This fixes the Marketplace Error
+frappe_version = ">=15.0.0 <16.0.0"
