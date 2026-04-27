@@ -72,6 +72,7 @@ Build your own intelligent auto-responder:
 ## 🤝 Support & Customization
 
 📧 [nexgenerptechnologies@gmail.com](mailto:nexgenerptechnologies@gmail.com)
+💬 [WhatsApp Support](https://wa.me/919811920503)
 🌐 [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com)
 
 ---
