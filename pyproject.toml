@@ -8,7 +8,8 @@ version = "1.0.0"
 requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [
-    "requests"
+    "requests",
+    "frappe>=15.0.0,<16.0.0"
 ]
 
 [tool.bench]
@@ -22,3 +23,4 @@ app_license = "MIT"
 
 # This fixes the Marketplace Error
 frappe_version = ">=15.0.0 <16.0.0"
+required_apps = ["frappe>=15.0.0 <16.0.0"]

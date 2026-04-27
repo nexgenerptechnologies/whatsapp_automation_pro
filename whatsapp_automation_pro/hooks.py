@@ -4,6 +4,7 @@ app_publisher = "NexGen Enterprises"
 app_description = "Advanced WhatsApp Marketing and Automation Connector"
 app_email = "nexgenerptechnologies@gmail.com"
 app_license = "MIT"
+app_version = "1.0.0"
 
 # Document Events
 # ----------------
