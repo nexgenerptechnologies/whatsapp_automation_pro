@@ -1,10 +1,6 @@
 # WhatsApp Automation Pro 🚀
 
-**The Ultimate WhatsApp Marketing & Automation Suite for Frappe / ERPNext**
-
-**Version:** 1.0.0
-
-Choose your way! Whether you prefer the simplicity of **QR Code Scanning** or the power of the **Official WhatsApp Business API**, our app bridges the gap seamlessly.
+**Automate ERPNext via WhatsApp! Zero per-message fees, no official API needed. Includes dynamic triggers & a pro chatbot builder.**
 
 ---
 
