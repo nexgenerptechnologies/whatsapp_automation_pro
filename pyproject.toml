@@ -5,8 +5,6 @@ authors = [
 ]
 description = "Advanced WhatsApp Marketing and Automation Connector"
 version = "1.0.0"
-requires-python = ">=3.10"
-dynamic = ["version"]
 dependencies = [
     "requests",
     "frappe>=15.0.0,<16.0.0"
