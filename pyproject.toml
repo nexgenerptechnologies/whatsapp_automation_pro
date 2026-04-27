@@ -6,8 +6,7 @@ authors = [
 description = "Advanced WhatsApp Marketing and Automation Connector"
 version = "1.0.0"
 dependencies = [
-    "requests",
-    "frappe>=15.0.0,<16.0.0"
+    "requests"
 ]
 
 [tool.bench]
@@ -19,5 +18,8 @@ app_color = "green"
 app_email = "nexgenerptechnologies@gmail.com"
 app_license = "MIT"
 
-# This fixes the Marketplace Error
-frappe_version = ">=15.0.0, <16.0.0"
+[tool.frappe]
+developer_mode = 1
+
+[tool.bench.dependencies]
+frappe = ">=15.0.0, <16.0.0"
