@@ -75,4 +75,4 @@ Build your own intelligent auto-responder:
 🌐 [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com)
 
 ---
-*Empowering your business with **NexGen Enterprises** | [nexgeenrp.in](https://nexgeenrp.in)*
+*Empowering your business with **NexGen Enterprises** | [nexgenerp.in](https://nexgenerp.in)*
