@@ -74,4 +74,5 @@ Build your own intelligent auto-responder:
 📧 [nexgenerptechnologies@gmail.com](mailto:nexgenerptechnologies@gmail.com)
 🌐 [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com)
 
-*Empowering your business with NexGen Automation*
+---
+*Empowering your business with **NexGen Enterprises** | [nexgeenrp.in](https://nexgeenrp.in)*
