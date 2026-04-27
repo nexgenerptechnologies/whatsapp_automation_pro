@@ -9,3 +9,4 @@ This app provides a connection between your ERPNext instance and a third-party W
 
 ### User Responsibility
 Users are responsible for ensuring that their use of WhatsApp for business communication complies with WhatsApp’s Terms of Service and local data privacy laws (e.g., GDPR, CCPA).
+ 
