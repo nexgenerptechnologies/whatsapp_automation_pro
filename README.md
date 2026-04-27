@@ -45,6 +45,11 @@ Build your own intelligent auto-responder:
 - **Keyword Matching**: Setup "Exact Match" or "Contains" rules.
 - **Dynamic Replies**: Answer customer queries (Price, Location, Status) 24/7.
 
+### 3. 🌟 Premium "Standout" Features
+- 📄 **Automatic PDF Links**: Send direct download links for Invoices and Reports.
+- 💳 **Payment Link Integration**: Include "Pay Now" links to get paid 3x faster.
+- 📜 **Communication Logs**: Track every sent message directly within ERPNext.
+
 ---
 
 ## 🚀 Getting Started in 3 Steps

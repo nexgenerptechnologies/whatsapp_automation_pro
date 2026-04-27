@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "autoname": "hash",
+ "creation": "2026-04-26 15:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date and Time",
+   "default": "Now"
+  },
+  {
+   "fieldname": "receiver_phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Receiver Phone"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reference Name"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message Sent"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Sent\nFailed",
+   "default": "Sent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 0,
+ "modified": "2026-04-26 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "WhatsApp Automation Pro",
+ "name": "WhatsApp Message Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "date_time",
+ "sort_order": "DESC",
+ "states": []
+}

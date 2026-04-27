@@ -1,6 +1,7 @@
 import frappe
 import requests
 import json
+from frappe.utils import get_url
 
 def get_settings():
     """Retrieve settings from the 'WhatsApp Automation Settings' DocType."""
@@ -69,9 +70,32 @@ def process_dynamic_trigger(doc, method=None):
             if not phone:
                 continue
             
+            # Prepare extra context (PDF and Payment Links)
+            context = doc.as_dict()
+            context['pdf_url'] = get_url(f"/api/method/frappe.utils.print_format.download_pdf?doctype={doc.doctype}&name={doc.name}&format=Standard")
+            
+            if hasattr(doc, 'get_payment_link'):
+                context['payment_url'] = doc.get_payment_link()
+            else:
+                context['payment_url'] = ""
+
             # Render and send
-            message = frappe.render_template(trigger.message_template, doc)
-            send_whatsapp_text(phone, message)
+            message = frappe.render_template(trigger.message_template, context)
+            response = send_whatsapp_text(phone, message)
+
+            # Log the message
+            log_whatsapp_message(phone, message, doc.doctype, doc.name, response.get("status"))
+
+def log_whatsapp_message(phone, message, doctype, docname, status):
+    """Save a record of the sent message."""
+    frappe.get_doc({
+        "doctype": "WhatsApp Message Log",
+        "receiver_phone": phone,
+        "message": message,
+        "document_type": doctype,
+        "document_name": docname,
+        "status": "Sent" if status != "error" else "Failed"
+    }).insert(ignore_permissions=True)
 
 def send_invoice_notification(doc, method=None):
     # This is now handled by process_dynamic_trigger if configured in the table
