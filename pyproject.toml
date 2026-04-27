@@ -4,7 +4,10 @@ authors = [
     { name = "NexGen Enterprises", email = "nexgenerptechnologies@gmail.com" }
 ]
 description = "Advanced WhatsApp Marketing and Automation Connector"
+readme = "README.md"
+requires-python = ">=3.10"
 version = "1.0.0"
+
 dependencies = [
     "requests"
 ]
@@ -18,8 +21,5 @@ app_color = "green"
 app_email = "nexgenerptechnologies@gmail.com"
 app_license = "MIT"
 
-[tool.frappe]
-developer_mode = 1
-
-[tool.bench.dependencies]
-frappe = ">=15.0.0, <16.0.0"
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0, <=16.0.0"
