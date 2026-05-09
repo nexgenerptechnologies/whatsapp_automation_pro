@@ -25,7 +25,7 @@ We give you the freedom to choose the connection method that fits your business 
 This app is a professional connector for the **NexGen WhatsApp Gateway**. 
 
 > [!IMPORTANT]
-> **Platform Subscription**: In both cases (QR or Official API), an active subscription on [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com) is required to enable the bridge.
+> **Platform Subscription**: In both cases (QR or Official API), an active subscription on our official platform is required to enable the bridge.
 
 - 💰 **Save on Costs**: Choose the QR Scan method to eliminate all Meta per-message conversation charges.
 - 🧪 **Trial Available**: New users can sign up for a trial account on our platform to test the integration.
