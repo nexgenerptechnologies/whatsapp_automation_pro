@@ -54,8 +54,7 @@ Build your own intelligent auto-responder:
 
 ## 🚀 Getting Started
 
-1. **Get your API Account**:
-   - Create an account at our wasender portal.
+   - Create an account on our official platform.
    - Link your WhatsApp via QR Code or Official API.
 
 2. **Install the App**:
@@ -69,9 +68,7 @@ Build your own intelligent auto-responder:
 
 ## 🤝 Support & Customization
 
-📧 nexgenerptechnologies@gmail.com
-💬 WhatsApp Support: +91 98119 20503
-🌐 wasender.digitalsoftech.com
+If you need any help, custom integrations, or want to explore more features, please use the **Support URL** or **Website** links provided on this page to contact our team.
 
 ---
-*Empowering your business with **NexGen Enterprises** | nexgenerp.in*
+*Empowering your business with **NexGen Enterprises**.*
