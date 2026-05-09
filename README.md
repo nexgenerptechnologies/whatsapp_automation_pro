@@ -52,20 +52,18 @@ Build your own intelligent auto-responder:
 
 ---
 
-## 🚀 Getting Started in 3 Steps
+## 🚀 Getting Started
 
 1. **Get your API Account**:
    - Create an account at [wasender.digitalsoftech.com](https://wasender.digitalsoftech.com).
    - Link your WhatsApp via QR Code or Official API.
 
 2. **Install the App**:
-   ```bash
-   bench get-app https://github.com/nexgenerptechnologies/whatsapp_automation_pro.git
-   bench install-app whatsapp_automation_pro
-   ```
+   - Simply click **Install** from the Frappe Marketplace dashboard.
 
 3. **Configure & Launch**:
-   - Enter your **Vendor UID** and **API Token** in ERPNext and start automating!
+   - Open **WhatsApp Automation Settings** in ERPNext.
+   - Enter your **Vendor UID** and **API Token** and start automating!
 
 ---
 
