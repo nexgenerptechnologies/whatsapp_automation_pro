@@ -16,6 +16,7 @@ dependencies = [
 app_title = "WhatsApp Automation Pro"
 app_publisher = "NexGen Enterprises"
 app_publisher_url = "https://nexgenerp.in"
+app_category = "Integrations"
 app_description = "Automate ERPNext via WhatsApp! Zero per-message fees, no official API needed. Includes dynamic triggers & a pro chatbot builder."
 app_icon = "octicon octicon-device-mobile"
 app_color = "green"
