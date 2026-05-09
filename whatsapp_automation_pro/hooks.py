@@ -9,9 +9,12 @@ app_version = "1.0.0"
 # Document Events
 # ----------------
 doc_events = {
-    "*": {
-        "on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"
-    },
+    "Sales Invoice": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
+    "Sales Order": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
+    "Quotation": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
+    "Delivery Note": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
+    "Payment Entry": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
+    "Purchase Order": {"on_submit": "whatsapp_automation_pro.api.process_dynamic_trigger"},
     "Lead": {
         "after_insert": "whatsapp_automation_pro.api.send_welcome_message"
     }

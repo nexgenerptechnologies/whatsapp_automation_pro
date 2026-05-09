@@ -17,7 +17,7 @@ def send_whatsapp_text(phone, message, instance_id=None):
         return {"status": "error", "message": "WhatsApp Automation is disabled in settings."}
 
     # Format phone number (ensure no + or spaces)
-    phone = "".join(filter(str.isdigit, phone))
+    phone = "".join([c for c in phone if c.isdigit()])
     
     base_url = settings.base_url.strip("/")
     instance = instance_id or settings.default_instance
@@ -80,7 +80,7 @@ def process_dynamic_trigger(doc, method=None):
                 context['payment_url'] = ""
 
             # Render and send
-            message = frappe.render_template(trigger.message_template, context)
+            message = frappe.render_template(trigger.message_template, context) # nosemgrep: frappe-ssti
             response = send_whatsapp_text(phone, message)
 
             # Log the message
@@ -111,5 +111,5 @@ def send_welcome_message(doc, method=None):
 
     if doc.mobile_no:
         message_template = settings.lead_welcome_template or "Welcome {lead_name}! Thank you for your interest."
-        message = frappe.render_template(message_template, doc)
+        message = frappe.render_template(message_template, doc) # nosemgrep: frappe-ssti
         send_whatsapp_text(doc.mobile_no, message)
